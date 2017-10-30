@@ -1,9 +1,10 @@
 #!usr/bin/python
+#This code is written by Diresh Soomirte!
 
 import MySQLdb
 import serial
 
-db = MySQLdb.connect("localhost","root","adminyolo","carData")
+db = MySQLdb.connect("localhost","your_username","your_pw","your_db")
 curs = db.cursor()
 gps = serial.Serial("/dev/ttyACM0", baudrate =9600)
 while True:
